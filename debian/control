@@ -1,0 +1,23 @@
+Source: cosmic-dark-light
+Section: x11
+Priority: optional
+Maintainer: Ashley Wulber <ashley@system76.com>
+Build-Depends:
+    cargo,
+    just,
+    debhelper-compat (=10),
+    rustc (>=1.57),
+Standards-Version: 4.1.1
+Homepage: https://github.com/pop-os/cosmic-dark-light
+
+Package: cosmic-dark-light
+Architecture: amd64 arm64
+Depends:
+    ${misc:Depends},
+    ${shlibs:Depends},
+    libegl1,
+    libwayland-server0,
+Recommends:
+    cosmic-session,
+    libgl1-mesa-dri
+Description: Switch between dark and light mode in Cosmic

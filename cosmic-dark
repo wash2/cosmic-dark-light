@@ -1,0 +1,2 @@
+#!/bin/sh
+exec cosmic-dark-light -d
